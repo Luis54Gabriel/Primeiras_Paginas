@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<th lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Luís Gabriel da Silva">
+        <meta name="description" content="Projeto de Interfaces Loja de Informática">
+        <meta name="keywords" content="Loja, Informática, Luís">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="60">
+        <link rel="stylesheet" href="estilo/estilo.css">
+        <link rel="shortcut icon" href="imagem/comp.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/89aa69e63f.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Loja de Informática</title>
+    </head>
+
+    <!--   CABEÇALHO   -->
+
+<th>
+    <header class="cabecalho">
+        <h1 class="logo"><a href="index.html" title="Loja de Informática">Loja de Informática</a></h1>
+        <!--Formulário serve como comunicação entre front end e back end-->
+        <!--Back end é a conexão com o banco de dados, já o front end é a parte que interage com o usuário-->
+        <form action="menucentral.html" method="get">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua pesquisa aqui">
+            <!--Método de pesquisa com botão e ícone-->
+            <button><i class="fas fa-search"></i></button>
+        </form>
+        <!--O método post devolve a informação em forma de url-->
+        <!--"form" é o formulário. "get"  -->
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <!--"li" é um item da lista-->
+        </ul>
+        <!--"ul" é uma lista não ordenada, ou seja, a ordenada não tem número nem ordem-->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fas fa-envelope-square fa-lg"></i></a>
+            <a href="#"><i class="fab fa-google fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <!--   PRODUTO 3   -->
+
+    <main class="prod">
+        <img class="imgprod"
+            src="https://a-static.mlcdn.com.br/618x463/notebook-samsung-flash-f30-celeron-4gb-ssd-64gb-tela-13-3-w10-pro/ciadomicro/1830736915/57589e5337411000d58c19b209913753.jpg"
+            alt="Samsumg Flash">
+
+        <aside class="infoprod">
+            <h2 id="nomeprod" title="Samsumg Flash">Notebook Samsung Flash F30 Celeron 4gb Ssd 64gb Tela 13.3” W10 Pro
+            </h2>
+            <br>
+            <h2>Por R$2.999,00 <br>em 12x de R$ 249,92 sem juros</h2>
+            <br>
+            <p class="maisopcoes" title="Opções de pagamento e proteção roubo e furto"><a href="#">Mais formas de
+                    pagamento</a><br><a href="#">Incluir garantia estendida e
+                    proteção roubo e furto</a></p>
+            <br>
+            <button onclick="document.location='#'" title="Comprar">Comprar</button>
+        </aside>
+    </main>
+
+    <h2 class="descprod" title="Descrição do produto">Descrição do produto</h2>
+    <p class="desc">
+        O Samsung Notebook Flash é um dispositivo de estilo único que dá um up no seu look, esteja em suas mãos ou na
+        sua mesa. Construído para encaixar em sua rotina e projetado com atenção aos detalhes, o Samsung Notebook Flash
+        é o notebook com um senso único de estilo.
+
+    </p>
+
+    <span class="infotec" title="Informações Técnicas">
+        <pre>
+
+<h2 title="Informações técnicas">Informações Técnicas</h2>
+Capacidade do SSD: 64 GB
+Marca: Samsung
+Processador: Intel Celeron N4000
+Sistema Operacional: Windows 10 Home
+Tamanho da Tela: 13.3"
+
+</pre>
+    </span>
+
+    <span class="formaspag">
+        <pre>
+        <h2 title="Formas de pagamento">Formas de pagamento</h2>
+R$ 3.299,00 à vista                     2x R$ 1.649,50 sem juros
+
+3x R$ 1.099,67 sem juros         4x R$ 824,75 sem juros
+
+5x R$ 659,80 sem juros           6x R$ 549,83 sem juros
+
+10x R$ 329,90 sem juros          12x R$ 306,23 com juros
+
+</pre>
+    </span>
+
+    <!--   PARTE DOS PRODUTOS   -->
+
+
+
+
+
+
+    <section class="newsletter">
+        <h3>Newsletter</h3>
+        <p>Receba nossas promoções por email!</p>
+        <form action="#" method="POST">
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+            <button type="button">Cadastrar</button>
+            <!--Local onde digita-->
+        </form>
+    </section>
+    <foooter class="rodape">
+        <p>&copy;Loja de Informática - Todos os direitos reservados.</p>
+    </foooter>
+    <!--"nav" é usada para navegação-->
+    <!--Ambiente de homologação é onde o cliente testa o serviço para ver se está de acordo com sua necessidade-->
+    </body>
+
+    </html>

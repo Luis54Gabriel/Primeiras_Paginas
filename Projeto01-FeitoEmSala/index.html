@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Projeto de Interfaces Loja de Informática">
+    <meta name="keywords" content="Loja, Informática, Luís">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="shortcut icon" href="imagem/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/89aa69e63f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Loja de Informática</title>
+</head>
+
+<!--   CABEÇALHO   -->
+
+<body>
+    <header class="cabecalho">
+        <h1 class="logo"><a href="index.html" title="Loja de Informática">Loja de Informática</a></h1>
+        <!--Formulário serve como comunicação entre front end e back end-->
+        <!--Back end é a conexão com o banco de dados, já o front end é a parte que interage com o usuário-->
+        <form action="menucentral.html" method="get">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua pesquisa aqui">
+            <!--Método de pesquisa com botão e ícone-->
+            <button><i class="fas fa-search"></i></button>
+        </form>
+        <!--O método post devolve a informação em forma de url-->
+        <!--"form" é o formulário. "get"  -->
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="orcamento.html">Serviços</a></li>
+            <!--"li" é um item da lista-->
+        </ul>
+        <!--"ul" é uma lista não ordenada, ou seja, a ordenada não tem número nem ordem-->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fas fa-envelope-square fa-lg"></i></a>
+            <a href="#"><i class="fab fa-google fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </nav>
+    <main class="principal">
+        <!--"main" é a parte principal do site-->
+        <article class="sobre">
+            <!--semântica para artigo-->
+            <h2>Sobre Nós</h2>
+            <img src="https://th.bing.com/th/id/R.3245df8ea5e55dba4a91b4e9f212 a900?rik=9s8hVj2iMYWyUA&riu=http%3a%2f%2finfoeds.com.br%2fwp-content%2fuploads%2f2017%2f11%2fsistema-loja-de-informatica.jpg&ehk=kTXc3BIZVijoObxAXz1u3SdP6BGJtpnBqfyKPGH7fxc%3d&risl=&pid=ImgRaw&r=0"
+                alt="Loja de Informática">
+            <!--"srcset" funciona como uma imagem reserva para a parte responsivel-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus voluptas ratione illo incidunt
+                adipisci consequuntur corporis ab. Consequatur ut eum perspiciatis laborum ipsum quae quibusdam iste
+                accusantium nam non.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus voluptas ratione illo incidunt
+                adipisci consequuntur corporis ab. Consequatur ut eum perspiciatis laborum ipsum quae quibusdam iste
+                accusantium nam non.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus voluptas ratione illo incidunt
+                adipisci consequuntur corporis ab. Consequatur ut eum perspiciatis laborum ipsum quae quibusdam iste
+                accusantium nam non.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus voluptas ratione illo incidunt
+                adipisci consequuntur corporis ab. Consequatur ut eum perspiciatis laborum ipsum quae quibusdam iste
+                accusantium nam non.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus voluptas ratione illo incidunt
+                adipisci consequuntur corporis ab. Consequatur ut eum perspiciatis laborum ipsum quae quibusdam iste
+                accusantium nam non.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus voluptas ratione illo incidunt
+                adipisci consequuntur corporis ab. Consequatur ut eum perspiciatis laborum ipsum quae quibusdam iste
+                accusantium nam non.
+            </p>
+        </article>
+        <aside class="onde-estamos">
+            <h2>Onde Estamos</h2>
+            <p id="pl">R. Pequetita, 111 - 1º andar - Vila Olímpia, São Paulo - SP, 04552-060</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.334730833479!2d-46.68727778562856!3d-23.592325368620212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5746788d7337%3A0x9aa342d84436332c!2sR.%20Pequetita%2C%20111%20-%201%C2%BA%20andar%20-%20Vila%20Ol%C3%ADmpia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004552-060!5e0!3m2!1spt-BR!2sbr!4v1628880586964!5m2!1spt-BR!2sbr"></iframe>
+            <!--Usando a API do Google Maps-->
+            <br>
+            <h2>Contatos</h2>
+            <ul>
+                <li><i class="fas fa-phone fa-lg"> +55 11 99136-3982</i></li>
+                <li><i class="fas fa-mobile fa-lg"> 11 94572-8413</i></li>
+                <li><i class="fas fa-envelope-square fa-lg"> contato@proa.org.br</i></li>
+            </ul>
+        </aside>
+        <!--Barra lateral-->
+    </main>
+    <section class="newsletter">
+        <h3>Newsletter</h3>
+        <p>Receba nossas promoções por email!</p>
+        <form action="#" method="POST">
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+            <button type="button">Cadastrar</button>
+            <!--Local onde digita-->
+        </form>
+    </section>
+    <foooter class="rodape">
+        <p>&copy;Loja de Informática - Todos os direitos reservados.</p>
+    </foooter>
+    <!--"nav" é usada para navegação-->
+    <!--Ambiente de homologação é onde o cliente testa o serviço para ver se está de acordo com sua necessidade-->
+</body>
+
+</html>

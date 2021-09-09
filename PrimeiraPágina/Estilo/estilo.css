@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(233, 233, 233), rgb(255, 102, 102));
+    /*border: 2px solid black;*/
+}
+
+#title {
+    font-family: initial;
+    border: 2px solid black;
+    /*"border" adiciona uma borda*/
+    max-width: max-content;
+    /*"max-width: max-content" faz com que a borda fique somente no conteúdo*/
+    /* border-radius: 15px;*/
+    /*Arredondamento da borda*/
+    font-size: 40px;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+
+/*"padding" é o espaçamento interno*/
+/*"margin" é o espaçamente externo*/
+.img {
+    width: "425";
+    height: "225";
+}
+
+/*Para utiizar o border radius com cor, deve-se criar um border isolado*/
+/*"span" serve para individualizar uma palavra ou localidade do  texto*/
+/*"class" agrupa*/
+/*"id" indica*/
+/*RGB, RGBA, HSLA (Hue, Saturation, Lightness, Transparency) e # (hexadecimal = 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F <255 = FF>)*/
+
+/*CSS dos links*/
+a:link {
+    color: rgb(106, 171, 245);
+    background-color: transparent;
+    /* text-decoration: none;*/
+}
+
+a:visited {
+    color: rgb(255, 0, 255);
+    background-color: transparent;
+    /* text-decoration: none;*/
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
